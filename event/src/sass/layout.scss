@@ -21,7 +21,6 @@ label.check_label{position:relative;display:inline-block;font-size:15px;color:#3
 label.check_label > span{position:absolute;top:0;left:0;display:block;width:18px;height:18px;cursor:pointer; /*background-image:url(../images/input_radio.png);background-repeat:no-repeat;background-position:left top*/}
 input.check_input{position:absolute;top:0;left:0;width:18px;height:18px;opacity:0;cursor: pointer;z-index:5}
 input.check_input:checked + label > span{background-position:left bottom}
-input.check_input:checked + label{}
 
 
 input.focus{border-radius:2px}
@@ -200,7 +199,6 @@ strong {font-weight: 600 !important;}
 
 
 
-.invite__evt {}
 .invite__evt .alert_pop {position:relative;height:485px !important;padding:38px 22px 100px 22px !important;}
 .invite__evt .btn_wrap {position: absolute;bottom:0;left:0;right: 0;width: auto;margin: 0 22px 26px 22px !important;}
 .invite__evt.pop.small_pop .pop_wrap2 {position: relative;left: 140px;width:90% !important; max-width:405px;padding:0}
@@ -1510,7 +1508,6 @@ a.btn_ok {height:51px;font-size:18px;line-height:51px;letter-spacing: 0.3em;font
 .group202007__itemName {display:inline-block;vertical-align:top;width:79px;text-align: center;font-size:13px; line-height:22px; color:#414141;}
 .group202007__itemText {display: inline-block;vertical-align:top;padding:0 5px; font-size:13px; line-height: 22px; color:#414141; background:#fec2b6;}
 .group202007__btnReset {display:block;margin-top:30px;width:79px; height:38px; font-size: 12px; color:#fff; background: #959595;border:none;}
-.group202007__invite {}
 .group202007__inviteItem {margin-top: 6px;}
 .group202007__inviteName,
 .group202007__inviteTel {padding:0 0 0 10px;height:38px !important;box-sizing: border-box !important; font-size:12px !important; line-height:1 !important; text-align:left;border:1px solid #f1f1f1 !important; color:#414141;}
@@ -1518,7 +1515,7 @@ a.btn_ok {height:51px;font-size:18px;line-height:51px;letter-spacing: 0.3em;font
 .group202007__inviteTel {width:72% !important;}
 .group202007__text {margin-top:6px;font-size:11px; line-height:15px; color:#6d6d6d;}
 .group202007__btnbox {overflow:hidden;margin:36px 0 0 -11px;}
-.group202007__btn {margin:0 0 0 11px;display:inline-block;float:left;width:calc(50% - 11px); height:38px;font-size:12px; color:#fff;text-align:center; border:none;}
+.group202007__btn {margin:0 0 0 11px;float:left;width:calc(50% - 11px); height:38px;font-size:12px; color:#fff;text-align:center; border:none;}
 .group202007__btn.red {background:#ff6547 !important}
 .group202007__btn.blue {background: #143958 !important;}
 
@@ -1867,8 +1864,6 @@ a.btn_ok {height:51px;font-size:18px;line-height:51px;letter-spacing: 0.3em;font
       }
     }
   }
-  .ranking {
-  }
   .btn_wrap {
     background: $rankColor;
   }
@@ -1933,17 +1928,6 @@ a.btn_ok {height:51px;font-size:18px;line-height:51px;letter-spacing: 0.3em;font
     &.evtInv2109 {// 기존 방식 사용 금지 21.09 이후 사용 금지
       &.color_ff7a2a {
         @include popColor(#ff7a2a);
-        .event {
-          &Stamp {
-            .eventStamp__item {
-              &.on {
-                .eventStamp__itemBg {
-                  // @include activeBg(192247);
-                }
-              }
-            }
-          }
-        }
       }
       .popup_content {
         min-height: 290px;// 최소 높이값
@@ -2216,13 +2200,6 @@ a.btn_ok {height:51px;font-size:18px;line-height:51px;letter-spacing: 0.3em;font
               padding-top: 110px;
             }
           }
-          .popupTab__content {
-            &.tab2 {
-              .top_tit {
-                // margin-top: 100px;
-              }
-            }
-          }
         }
         &.color_f98fa4 {
           @include popColor(#f98fa4);
@@ -2238,13 +2215,6 @@ a.btn_ok {height:51px;font-size:18px;line-height:51px;letter-spacing: 0.3em;font
             }
             &Complete {
               padding-top: 110px;
-            }
-          }
-          .popupTab__content {
-            &.tab2 {
-              .top_tit {
-                // margin-top: 100px;
-              }
             }
           }
         }
@@ -2461,17 +2431,6 @@ a.btn_ok {height:51px;font-size:18px;line-height:51px;letter-spacing: 0.3em;font
       &.evtInv2109 {// 기존 작업 때문에 있는 class 추후 작업은 아래에 color별로 정리 하면됩니다.
         &.color_ff7a2a {
           @include popColor(#ff7a2a);
-          .event {
-            &Stamp {
-              .eventStamp__item {
-                &.on {
-                  .eventStamp__itemBg {
-                    // @include activeBg(192247);
-                  }
-                }
-              }
-            }
-          }
           .popup_content {
             min-height: 290px;// 최소 높이값
           }
@@ -2482,17 +2441,6 @@ a.btn_ok {height:51px;font-size:18px;line-height:51px;letter-spacing: 0.3em;font
       // 2021년 10월 이벤트
       &.color_e45f3d {
         @include popColor(#e45f3d);
-        .event {
-          &Stamp {
-            .eventStamp__item {
-              &.on {
-                .eventStamp__itemBg {
-                  // @include activeBg(192247);
-                }
-              }
-            }
-          }
-        }
         .popup_content {
           min-height: 290px;// 최소 높이값
         }
@@ -2501,17 +2449,6 @@ a.btn_ok {height:51px;font-size:18px;line-height:51px;letter-spacing: 0.3em;font
       // 2021년 12월 이벤트
       &.color_b02929 {
         @include popColor(#b02929);
-        .event {
-          &Stamp {
-            .eventStamp__item {
-              &.on {
-                .eventStamp__itemBg {
-                  // @include activeBg(192247);
-                }
-              }
-            }
-          }
-        }
         .popup_content {
           min-height: 290px;// 최소 높이값
         }
@@ -2520,17 +2457,6 @@ a.btn_ok {height:51px;font-size:18px;line-height:51px;letter-spacing: 0.3em;font
       // 2022년 1월 이벤트
       &.color_252d52 {
         @include popColor(#252d52);
-        .event {
-          &Stamp {
-            .eventStamp__item {
-              &.on {
-                .eventStamp__itemBg {
-                  // @include activeBg(192247);
-                }
-              }
-            }
-          }
-        }
         .popup_content {
           min-height: 290px;// 최소 높이값
         }
@@ -2558,17 +2484,6 @@ a.btn_ok {height:51px;font-size:18px;line-height:51px;letter-spacing: 0.3em;font
       // 2022년 2월 초빙담당자
       &.color_57c351 {
         @include popColor(#57c351);
-        .event {
-          &Stamp {
-            .eventStamp__item {
-              &.on {
-                .eventStamp__itemBg {
-                  // @include activeBg(192247);
-                }
-              }
-            }
-          }
-        }
         .popup_content {
           min-height: 290px;// 최소 높이값
           .top_tit {
@@ -2637,7 +2552,6 @@ a.btn_ok {height:51px;font-size:18px;line-height:51px;letter-spacing: 0.3em;font
               }
             }
           }
-          &__inr {}
           &__ico {
             width: 75px;
             height: 75px;
@@ -2865,7 +2779,6 @@ a.btn_ok {height:51px;font-size:18px;line-height:51px;letter-spacing: 0.3em;font
           }
         }
       }
-      .event {}
       .popup_content {
         min-height: 290px;// 최소 높이값
       }
