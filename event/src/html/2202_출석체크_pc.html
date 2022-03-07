@@ -1,0 +1,291 @@
+<include src="./include/layout_pc.html">
+	<link rel="stylesheet" href="../event/css/xeicon.css">
+	<link rel="stylesheet" href="../event/css/font-awesome.css">
+	<!-- S: 이벤트 콘텐츠 -->
+	<!-- S: event -->
+
+
+	<style>
+		.event_wrap.ready::after {padding-top: 74%;}
+		.evtExpBox {padding:0;}
+		.evtExpList.ready::after ,
+		.evtExpList.close::after {left: 7%;right: 7%;border-radius: 15px;}
+		.evtExpList.ready::after {background: rgba(0,0,0,.5);}
+		.evtExpList.close::after {background: rgba(0,0,0,.7);}
+		.event_wrap img{display: block;}
+		.event_wrap a{display: block;width: 100%;}
+		.event_wrap button{display: block;width: 100%;}
+        .utiDetail_container .bg_m img {display: block;}
+		.newExpList {position: relative;}
+		.newExpList.close::before {content: "Coming Soon";font-size: 50px;font-weight: bold;text-align: center;letter-spacing: -1px;color: #fff;position: absolute;width: 100%;top: 50%;transform: translateY(-50%); left: 0;z-index: 1;}
+		.newExpList.close::after {content: ""; background: rgba(0,0,0,.5);height: 100%;width: 90%;position: absolute;left: 50%;transform: translateX(-50%); top: 0;border-radius: 45px;}
+	</style>
+	<div class class="event_wrap" style="width: 100%;">
+		<div class="bg_m"><img src="../event/images/2022/02_check/img_01.png" alt=""></div>
+		<div class="bg_m"><img src="../event/images/2022/02_check/img_02.png" alt=""></div>
+		<div class="bg_m">
+			<button onclick="$('.evtExpPopupRenew.misson1').show()">
+                <img src="../event/images/2022/02_check/img_03.png" alt="">
+            </button>
+		</div>
+		<div class="bg_m"><img src="../event/images/2022/02_check/img_04.png" alt=""></div>
+
+        <div class="newExpList">
+			<div class="bg_m">
+				<button>
+					<img src="../event/images/2022/02_check/img_05.png" alt="">
+				</button>
+			</div>
+			<div class="bg_m">
+				<a href="https://www.intermd.co.kr/posting/list.do?postCate=41&postingOrder=N " target="_blank">
+					<img src="../event/images/2022/02_check/img_06.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="bg_m"><img src="../event/images/2022/02_check/img_07.png" alt=""></div>
+
+		<div class="newExpList">
+			<div class="bg_m">
+				<button>
+					<img src="../event/images/2022/02_check/img_08.png" alt="">
+				</button>
+			</div>
+			<div class="bg_m">
+				<a href="https://www.intermd.co.kr/webinar/list.do" target="_blank">
+					<img src="../event/images/2022/02_check/img_09.png" alt="">
+				</a>
+			</div>
+		</div>
+
+		<div class="bg_m"><img src="../event/images/2022/02_check/img_10.png" alt=""></div>
+		<div class="bg_m"><img src="../event/images/2022/02_check/img_11.png" alt=""></div>
+		<div class="bg_m">
+			<a href="https://www.intermd.co.kr/event/detail.do?eventPseq=1141" target="_blank">
+				<img src="../event/images/2022/02_check/img_12.png" alt="">
+			</a>
+		</div>
+		<div class="bg_m"><img src="../event/images/2022/02_check/img_13.png" alt=""></div>
+	</div>
+	<!--  S: 댓글창 -->
+	<div class="teacher2104__reply" id="comment_reply">
+		<div class="comments conversation__comments">
+			<ul class="comments__list on">
+				<!-- S: 댓글 -->
+				<li>
+					<div class="comment">
+						<div class="testimonial__image">
+							<a>
+								<div class="testimonial__image"> <span class="info">
+									<span class="gyFont"><strong class="defaultFont">홍길동</strong></span>
+									</span>
+								</div>
+							</a>
+						</div>
+						<div class="comment__body">
+							<p>선생님 감사합니다.</p>
+							<div class="comment__meta">
+								<ul class="list-inline">
+									<li>
+										<div class="card__action">
+											<button class="">좋아요</button>
+										</div> <span class="bar"></span>
+									</li>
+									<li>
+										<div class="card__action"><span class="gyFont">2020.12.15</span>
+										</div>
+									</li>
+									<li class="like_data">
+										<div class="card__action"><span><i class="fa fa-thumbs-up"></i></span><strong>1</strong>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- E: 댓글 -->
+                <!-- S: 댓글 -->
+				<li>
+					<div class="comment">
+						<div class="testimonial__image">
+							<a>
+								<div class="testimonial__image"> <span class="info">
+                            <span class="gyFont"><strong class="defaultFont">임꺽정</strong></span>
+									</span>
+								</div>
+							</a>
+						</div>
+						<div class="comment__body">
+							<p>
+                                선생님 감사합니다. 선생님 감사합니다. 선생님 감사합니다. 선생님 감사합니다. 선생님 감사합니다.
+                                선생님 감사합니다. 선생님 감사합니다. 선생님 감사합니다. 선생님 감사합니다. 선생님 감사합니다.
+                            </p>
+							<div class="comment__meta">
+								<ul class="list-inline">
+									<li>
+										<div class="card__action">
+											<button class="on">좋아요</button>
+										</div> <span class="bar"></span>
+									</li>
+									<li>
+										<div class="card__action"><span class="gyFont">2020.12.15</span>
+										</div>
+									</li>
+									<li class="like_data">
+										<div class="card__action"><span><i class="fa fa-thumbs-up"></i></span><strong>100</strong>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- E: 댓글 -->
+                <!-- S: 댓글 -->
+				<li>
+					<div class="comment">
+						<div class="testimonial__image">
+							<a>
+								<div class="testimonial__image"> <span class="info">
+                            <span class="gyFont"><strong class="defaultFont">김선경</strong></span>
+									</span>
+								</div>
+							</a>
+						</div>
+						<div class="comment__body">
+							<p>선생님 감사합니다.</p>
+							<div class="comment__meta">
+								<ul class="list-inline">
+									<li>
+										<div class="card__action">
+											<button class="">좋아요</button>
+										</div> <span class="bar"></span>
+									</li>
+									<li>
+										<div class="card__action"><span class="gyFont">2020.12.15</span>
+										</div>
+									</li>
+									<li class="like_data">
+										<div class="card__action"><span><i class="fa fa-thumbs-up"></i></span><strong>1</strong>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</li>
+				<!-- E: 댓글 -->
+			</ul>
+		</div>
+		<div class="moreBtn__wrapper">
+			<a href="#" class="listMoreBtn">더보기</a>
+		</div>
+	</div>
+	<!-- E: 댓글창 끝 -->
+	<!-- E: event -->
+
+	
+	<!-- Event Popup -->
+
+    <!-- 1차 미션 Type1 -->
+    <div class="evtExpPopupRenew evtExp2201 evtExpCommon color_ed6f43 misson1" style="display: block;">
+		<div class="evtExpPopupRenew__inr">
+			<div class="popupTab">
+				<button class="popupTab__btn on" style="width: 100%;">미션 현황</button>
+			</div>
+			<div class="popup_content">
+				<div class="top_tit">2월 21일 현황</div>
+				<div class="eventStamp" style="padding-bottom: 20px;">
+					<div class="eventStamp__item on">
+						<div class="eventStamp__itemBg"></div>
+						<div class="eventStamp__itemTxt">
+							<p>출석 체크</p>
+						</div>
+					</div>
+					<div class="eventStamp__item">
+						<div class="eventStamp__itemBg"></div>
+						<div class="eventStamp__itemTxt">
+							<p>추천게시물<br>답글 작성하기</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="top_tit" style="padding-top: 20px;">2월 22일 현황</div>
+				<div class="eventStamp" style="padding-bottom: 20px;">
+					<div class="eventStamp__item on">
+						<div class="eventStamp__itemBg"></div>
+						<div class="eventStamp__itemTxt">
+							<p>출석 체크</p>
+						</div>
+					</div>
+					<div class="eventStamp__item">
+						<div class="eventStamp__itemBg"></div>
+						<div class="eventStamp__itemTxt">
+							<p>웹 세미나<br>시청하기</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="btn_wrap" onclick="$(this).closest('.evtExpPopupRenew').hide();return false;">확인</button>
+		</div>
+	</div>
+	<!-- 1차 미션 Type2 -->
+    <div class="evtExpPopupRenew evtExp2201 evtExpCommon color_ed6f43 misson1-1" style="display: block;">
+		<div class="evtExpPopupRenew__inr">
+			<div class="popupTab">
+				<button class="popupTab__btn on" style="width: 100%;">미션 현황</button>
+			</div>
+			<div class="popup_content">
+				<div class="eventTxt">
+					홍길동 선생님은 <br>
+					본 이벤트 <br>
+					참여대상이 아닙니다.<br><br>
+					2월 이내 로그인하신 이력이 있습니다.<br>
+					인터엠디 내 다른 이벤트에 참여주세요!
+				</div>
+			</div>
+			<button class="btn_wrap" onclick="$(this).closest('.evtExpPopupRenew').hide();return false;">확인</button>
+		</div>
+	</div>
+        <!-- 1차 미션 완료 -->
+        <div class="evtExpPopupRenew evtExp2201 evtExpCommon color_ed6f43 misson1_complete" style="display: block;">
+            <div class="evtExpPopupRenew__inr">
+                <div class="popupTab">
+					<button class="popupTab__btn on" style="width: 100%;">미션 현황</button>
+				</div>
+                <div class="popup_content">
+                    <!-- 미션현황 -->
+                    <div class="eventComplete">
+						<div class="imgBlock">
+							<img src="../event/images/2022/02_check/mission_complete.png" alt="">
+						</div>
+						<p>미션 달성 완료!</p>
+					</div>	
+                    <!-- // 미션현황 -->
+                </div>
+                <button class="btn_wrap" onclick="$(this).closest('.evtExpPopupRenew').hide();return false;">확인</button>
+            </div>
+        </div>
+        <!-- //1차 미션 완료 -->
+    <!-- //1차 미션 -->
+    
+
+    <script>
+		// $(function(){
+		// 	$('.popupTab__btn').click(function(){
+		// 		var $this = $(this);
+		// 		$('.popupTab__btn').removeClass('on');
+		// 		$this.addClass('on');
+		// 		var contentID = $this.attr('data-content');
+		// 		$('.popupTab__content').hide();
+		// 		$('.'+contentID).show();				
+		// 		return false;
+		// 	})
+		// })
+	</script>
+
+
+	<!-- //Event Popup -->
+	<!-- E: 이벤트 콘텐츠 -->
+</include>

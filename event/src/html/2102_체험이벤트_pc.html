@@ -1,0 +1,133 @@
+<include src="./include/layout_pc.html">
+
+<!-- S: 이벤트 콘텐츠 -->
+
+
+<!-- S: event -->
+<style>
+	.evtExpBox {padding:0;}
+	.evtExpList.ready:after ,
+	.evtExpList.close:after {left: 8.5%;right: 8.5%;border-radius: 15px;}
+	.evtExpList.ready:after {background: rgba(0,0,0,.5);}
+	.evtExpList.close:after {background: rgba(0,0,0,.7);}
+	.event_wrap img{display: block;}
+</style>
+<div class="event_wrap" style="width: 100%;">
+	<div class="bg_m"><img src="../event/images/2021/02_experience/img_01.png" alt="체험미션" /></div>
+    <div class="bg_m"><a href="javascript:void(0);" onclick="fn_openMissionBox();"><img src="../event/images/2021/02_experience/img_02.png" alt="나의 미션 현황 보기"></a></div>
+	<div class="bg_m"><img src="../event/images/2021/02_experience/img_03.png" alt="" /></div>
+    <div class="bg_m"><img src="../event/images/2021/02_experience/img_04.png" alt="" /></div>
+    <div class="evtExpBox">
+        <!-- <div class="evtExpList close"> -->
+        <div class="evtExpList">
+            <div class="bg_m"><a href="https://www.intermd.co.kr/webinar/list.do" target="_blank"><img src="../event/images/2021/02_experience/img_05.png" alt="웹 세미나 체험하기" /></a></div>
+        </div>
+    </div>
+    <div class="bg_m"><img src="../event/images/2021/02_experience/img_06.png" alt="" /></div>
+    <div class="bg_m"><img src="../event/images/2021/02_experience/img_07.png" alt="" /></div>
+	<div class="evtExpBox">
+		<div class="evtExpList">
+			<a href="https://www.intermd.co.kr/poll/list.do?listFilter=ing" target="_blank"><img src="../event/images/2021/02_experience/img_08.png" alt="Poll 참여하기"></a>
+			<a href="https://www.intermd.co.kr/posting/list.do?postCate=&postingOrder=N" target="_blank"><img src="../event/images/2021/02_experience/img_09.png" alt="추천게시물에 답글 작성하기"></a>
+			<a href="javascript:void(0);"><img src="../event/images/2021/02_experience/img_10.png" alt="2월 친구초대 이벤트 공유하기"></a>
+			<a href="https://www.intermd.co.kr/webinar/list.do" target="_blank"><img src="../event/images/2021/02_experience/img_11.png" alt="웹 세미나 체험하기"></a>
+		</div>
+	</div>
+	<div class="bg_m"><img src="../event/images/2021/02_experience/img_12.png" alt="" /></div>
+	<div class="bg_m"><a href="#"><img src="../event/images/2021/02_experience/img_13.png" alt="다음 체험미션 미리보기" /></a></div>
+	<div class="bg_m"><img src="../event/images/2021/02_experience/img_14.png" alt="" /></div>
+</div>
+<!-- E: event -->
+
+
+
+<!-- Event Popup -->
+<div class="evtExpPopup ty2102" style="display: block;">
+    <div class="evtExpPopup__inr">
+        <div class="evtExpPopupTab__btnbox">
+            <button class="evtExpPopupTab__btn on" data-content="tab1">2월 미션현황</button>
+            <button class="evtExpPopupTab__btn" data-content="tab2">나의 체험미션</button>
+        </div>
+        <div class="evtExpPopup__body">
+            <!-- 미션현황 -->
+            <div class="evtExpPopup__content tab1">
+                <h1 class="evtExpPopup__h1">
+                    김닥터 선생님의 <br>
+                    <span class="pointColor">체험미션</span> 현황
+                </h1>
+                <!-- 체험미션 도장 -->
+                <div class="eventMission__stampBox col3">
+                    <div class="stamp on">
+                        <div class="stamp__inner">
+                            <div class="stamp__cont">
+                                Poll<br>참여하기<br>
+                                0/3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stamp">
+                        <div class="stamp__inner">
+                            <div class="stamp__cont">
+                                답글<br> 작성하기<br>
+                                0/3
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stamp">
+                        <div class="stamp__inner">
+                            <div class="stamp__cont">
+                                이벤트<br>공유하기<br>
+                                0/5
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stamp">
+                        <div class="stamp__inner">
+                            <div class="stamp__cont">
+                                웹 세미나<br>체험하기<br>
+                                0/10
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- // 체험미션 도장 -->
+
+            </div>
+            <!-- // 미션현황 -->
+            <!-- 나의 체험미션 -->
+            <div class="evtExpPopup__content tab2" style="display:none;">
+                <h1 class="evtExpPopup__h1">
+                    김닥터 선생님의 <br>
+                    2월 체험미션 현황
+                </h1>
+                <div class="evtExpPopup__list">
+                    <span class="pointColor">Mini 미션</span> 완료!<br>
+                    <span class="pointColor">Special 미션</span> <span class="gray">미완료</span>
+                </div>
+            </div>
+            <!-- // 나의 체험미션 -->
+        </div>
+        <button class="evtExpPopup__btn">확인</button>
+    </div>
+</div>
+
+
+<script>
+    $(function(){
+        $('.evtExpPopupTab__btn').click(function(){
+            var $this = $(this);
+            $('.evtExpPopupTab__btn').removeClass('on');
+            $this.addClass('on');
+            var contentID = $this.attr('data-content');
+            $('.evtExpPopup__content').hide();
+            $('.'+contentID).show();				
+            return false;
+        })
+    })
+</script>
+<!-- Event Popup -->
+
+
+
+<!-- E: 이벤트 콘텐츠 -->
+</include>									

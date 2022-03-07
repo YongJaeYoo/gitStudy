@@ -1,0 +1,187 @@
+<include src="./include/layout_mobile.html">
+
+    <!-- S: 이벤트 콘텐츠 영역 -->
+    
+    
+    
+    <script type="text/javascript">
+        $(function() {
+            $("#detail_bnt").click(function(){
+                $('#detail_pop').show();
+            });
+            $("#ck_bnt").click(function(){
+                $('#detail_pop').hide();
+            });
+            $("#send-sms").click(function(){
+                sendSMS();
+            });
+        });
+    </script>
+        <style>
+            .event_wrap button{display: block;width: 100%;}
+            .newExpList {position: relative;}
+            .newExpList.close::before {content: "Coming Soon";font-size: 30px;font-weight: bold;text-align: center;letter-spacing: -1px;color: #fff;position: absolute;width: 100%;top: 50%;transform: translateY(-50%); left: 0;z-index: 1;}
+            .newExpList.close::after {content: ""; background: rgba(0,0,0,.5);height: 100%;width: 90%;position: absolute;left: 50%;transform: translateX(-50%); top: 0;border-radius: 15px;}
+        </style>
+        <div class="event_wrap" style="width: 100%;">
+            <div class="bg_m"><img src="../event/images/2022/02_check/img_01.png" alt=""></div>
+            <div class="bg_m"><img src="../event/images/2022/02_check/img_02.png" alt=""></div>
+            <div class="bg_m">
+                <button onclick="$('.invite__evt.misson1').show()">
+                    <img src="../event/images/2022/02_check/img_03.png" alt="">
+                </button>
+            </div>
+            <div class="bg_m"><img src="../event/images/2022/02_check/img_04.png" alt=""></div>
+
+            <div class="newExpList">
+                <div class="bg_m">
+                    <button>
+                        <img src="../event/images/2022/02_check/img_05.png" alt="">
+                    </button>
+                </div>
+                <div class="bg_m">
+                    <a href="https://www.intermd.co.kr/posting/list.do?postCate=41&postingOrder=N " target="_blank">
+                        <img src="../event/images/2022/02_check/img_06.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg_m"><img src="../event/images/2022/02_check/img_07.png" alt=""></div>
+
+            <div class="newExpList">
+                <div class="bg_m">
+                    <button>
+                        <img src="../event/images/2022/02_check/img_08.png" alt="">
+                    </button>
+                </div>
+                <div class="bg_m">
+                    <a href="https://www.intermd.co.kr/webinar/list.do" target="_blank">
+                        <img src="../event/images/2022/02_check/img_09.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg_m"><img src="../event/images/2022/02_check/img_10.png" alt=""></div>
+            <div class="bg_m"><img src="../event/images/2022/02_check/img_11.png" alt=""></div>
+            <div class="bg_m">
+                <a href="https://www.intermd.co.kr/event/detail.do?eventPseq=1141" target="_blank">
+                    <img src="../event/images/2022/02_check/img_12.png" alt="">
+                </a>
+            </div>
+            <div class="bg_m"><img src="../event/images/2022/02_check/img_13.png" alt=""></div>
+        </div>
+        
+    
+    
+        <!-- Event Popup -->
+    
+        <!-- 1차 미션 Type1 -->
+        <div id="detail_pop" class="pop small_pop invite__evt misson1" style="display:block;overflow:auto;">
+            <div class="d_t">
+                <div class="d_c">
+                    <div class="pop_wrap__renew evtExp2202 color_ed6f43">
+                        <div class="popupTab" style="border-bottom: none;">
+                            <button class="popupTab__btn on" style="width: 100%;">미션 현황</button>
+                        </div>
+                        <!-- 체험미션 -->
+                        <div class="popup_content">
+                            <div class="top_tit">2월 21일 현황</div>
+                            <div class="eventStamp" style="padding-bottom: 20px;">
+                                <div class="eventStamp__item on">
+                                    <div class="eventStamp__itemBg"></div>
+                                    <div class="eventStamp__itemTxt">
+                                        <p>출석 체크</p>
+                                    </div>
+                                </div>
+                                <div class="eventStamp__item">
+                                    <div class="eventStamp__itemBg"></div>
+                                    <div class="eventStamp__itemTxt">
+                                        <p>추천게시물<br>답글 작성하기</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="top_tit" style="padding-top: 20px;">2월 22일 현황</div>
+                            <div class="eventStamp" style="padding-bottom: 20px;">
+                                <div class="eventStamp__item on">
+                                    <div class="eventStamp__itemBg"></div>
+                                    <div class="eventStamp__itemTxt">
+                                        <p>출석 체크</p>
+                                    </div>
+                                </div>
+                                <div class="eventStamp__item">
+                                    <div class="eventStamp__itemBg"></div>
+                                    <div class="eventStamp__itemTxt">
+                                        <p>웹 세미나<br>시청하기</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_wrap">
+                            <a href="javascript:;" id="ck_bnt" class="btn_ok type_02" title="확인" onclick="$(this).closest('.pop').hide();return false;">확인</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 1차 미션 Type1 -->
+        <div id="detail_pop" class="pop small_pop invite__evt" style="display:block;overflow:auto;">
+            <div class="d_t">
+                <div class="d_c">
+                    <div class="pop_wrap__renew evtExp2202 color_ed6f43">
+                        <div class="popupTab" style="border-bottom: none;">
+                            <button class="popupTab__btn on" style="width: 100%;">미션 현황</button>
+                        </div>
+                        <!-- 체험미션 -->
+                        <div class="popup_content">
+                            <div class="eventTxt">
+                                홍길동 선생님은 <br>
+                                본 이벤트 <br>
+                                참여대상이 아닙니다.<br><br>
+                                2월 이내 로그인하신 이력이 있습니다.<br>
+                                인터엠디 내 다른 이벤트에 참여주세요!
+                            </div>
+                        </div>
+                        <div class="btn_wrap">
+                            <a href="javascript:;" id="ck_bnt" class="btn_ok type_02" title="확인" onclick="$(this).closest('.pop').hide();return false;">확인</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- 1차 미션 완료 -->
+            <div id="detail_pop" class="pop small_pop invite__evt" style="display:block;overflow:auto;">    
+                <div class="d_t">
+                    <div class="d_c">
+                        <div class="pop_wrap__renew evtExp2202 color_ed6f43">
+                            <div class="popupTab" style="border-bottom: none;">
+                                <button class="popupTab__btn on" style="width: 100%;">미션 현황</button>
+                            </div>
+                            <!-- 체험미션 -->
+                            <div class="popup_content">
+                                <div class="eventComplete">
+                                    <div class="imgBlock">
+                                        <img src="../event/images/2022/02_check/mission_complete.png" alt="">
+                                    </div>
+                                    <p>미션 달성 완료!</p>
+                                </div>	
+                            </div>
+                            <div class="btn_wrap">
+                                <a href="javascript:;" id="ck_bnt" class="btn_ok type_02" title="확인" onclick="$(this).closest('.pop').hide();return false;">확인</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //1차 미션 완료 -->
+        <!-- //1차 미션 -->
+
+        <!-- Event Popup  -->
+                                    
+                                
+                                
+                            
+    
+    <!-- E: 이벤트 콘텐츠 영역 -->
+    </include>

@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes, viewport-fit=cover" />
+<meta property="og:title"         content="[인터엠디] 친구초대 이벤트" id="metaTitle" />
+<meta property="og:description"   content="의사만을 위한 Professional Knowledge Place" />
+<meta property="og:image"         content="https://www.intermd.co.kr/images/2001_invite/invite_logo.png" />
+<title>[인터엠디] 친구초대 이벤트</title>
+<link rel="stylesheet" href="../event/css/m_app.css?v=20200102" media="all" />
+
+<script src="https://www.intermd.co.kr/js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+
+	<style>
+		.bg_m,
+		.event_wrap img,
+		.md_login {margin: 0 auto;display:block;max-width: 750px;}
+		.md_login ul {margin:0 auto; width: 90%;}
+		.md_login ul li {overflow: hidden;margin-bottom: 10px;}
+		.md_login .input li>span {float:left; width: 20%;}
+		.md_login input {margin-top:0;}
+		.md_login span {vertical-align:middle;font-size:16px;line-height:50px}
+		input[type=text], input[type=number], input[type=email], input[type=password] {padding:0 0 0 10px;width:80%;height:50px; line-height:50px;box-sizing: border-box !important; font-size:20px; vertical-align: middle;box-shadow: none;}
+		.md_login .alert_msg {margin-top: 10px; margin-left:5%; margin-bottom:6px; font-size:13px;}
+		.md_login .check_login {margin-top:0;margin-left: 5%;margin-bottom:30px;}
+		input[type=checkbox].css-checkbox {margin:0; width:14px;height:14px;}
+		input[type=checkbox].css-checkbox + label.css-label {display:inline; font-size:13px; line-height:1.3em;}
+	
+		.acceptTextbox {margin: 20px auto;padding: 5vw 0px;width: 70%;max-width: 526px;box-sizing: border-box !important;border: 2.6vw solid #33ce9f;text-align: center;font-size: 4.9vw;color: #000;letter-spacing: -.05em;line-height: 1.64em;box-shadow: 2px 2px 9px rgb(39, 68, 111 , .4), inset 1px 1px 5px rgb(33, 89, 121, .4);}
+		.acceptTextbox__1 {font-weight: lighter;}
+		@media screen and (min-width:750px) {
+			.acceptTextbox {padding: 37px 0;font-size: 37px;border-width:20px;}
+		}
+	</style>
+	<div class="event_wrap" style="width: 100%;">
+		<div style="background-image: linear-gradient(to right, #06c486, #06c486, #0BC495, #0FC5A2, #12c5af, #12c5af);; overflow:hidden;">
+			<img src="../event/images/2021/04_fresher/img_01.png" alt="InterMD" />
+			<div class="acceptTextbox">
+				<div class="acceptTextbox__1">
+					2021 새내기 의사 선생님!<br />
+					선생님의 첫 걸음을 응원하며<br />
+				</div>
+				<b class="acceptTextbox__2">
+					<span>홍길동</span> 선생님이<br />
+					인터엠디에 초대하셨습니다.
+				</b>
+			</div>
+			<img src="../event/images/2021/04_fresher/img_02.png" alt="2021 새내기 의사 선생님의 첫 걸음을 응원합니다" />
+		</div>
+		<!-- 입력 Form : 기존코드 동일 -->
+		<div class="bg_m"><img src="../event/images/app/Mobile_invite_04.png" /></div>
+		<form id="insertForm" name="insertForm" method="post">
+			<input id="invitePseq" name="invitePseq" type="hidden" value="19013">
+			<input id="inviteName" name="inviteName" type="hidden" value="인터엠디">
+			<div class="md_login">
+				<p class="title"></p>
+				<div class="input">
+					<ul>
+						<li><span>이 름&nbsp;&nbsp;&nbsp;</span> <input type="text" name="name" id="name"  class="focus" onKeyPress="nameKey()"onkeydown='return nameCk(this)' ></li>
+						<li><span>휴대폰</span> <input type="text" name="phone" id="phone" placeholder="-없이 입력" class="focus" onKeyPress="numberKey()" onkeydown='return onlyNumber(this)' maxlength="11"></li>
+					</ul>
+				</div>
+				<p class="alert_msg">*인터엠디 신규가입 정보와 동일해야합니다.</p>
+				
+		        <p class="check_login">
+		            <input type="checkbox" name="checkboxG5" id="checkboxG5" class="css-checkbox" />
+		            <label for="checkboxG5" class="css-label">인터엠디 이벤트 등 홍보/알림 수신에 동의합니다.</label>
+		        </p>
+			</div>
+			<div>
+				<a href="javascript:;" id="saveBtn"><img src="../event/images/2021/04_fresher/img_03_btn.png"></a>
+			</div>
+			<div class="bg_m"><img src="../event/images/2021/04_fresher/img_04.png" /></div>
+		</form>
+		<div style="background: #062238;">
+			<img src="../event/images/2021/04_fresher/img_05.png" alt="welcome gift" />
+		</div>
+		<div style="background: #F8FBFD;">
+			<img src="../event/images/2021/04_fresher/img_06.png" alt="interMD를 소개합니다" />
+		</div>
+	</div>
+
+
+
+</body>
+</html>

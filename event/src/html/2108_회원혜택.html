@@ -1,0 +1,114 @@
+<include src="./include/layout_mobile.html">
+    <link rel="stylesheet" href="../event/css/xeicon.css">
+	<link rel="stylesheet" href="../event/css/font-awesome.css">
+
+<!-- S: 이벤트 콘텐츠 영역 -->
+
+
+
+<script type="text/javascript">
+    $(function(){
+        $('.accordian__title').click(function(){
+            var $accoParent = $(this).parent('.accordian');
+            var $accoCont = $accoParent.find('.accordian__desc');
+
+            $accoParent.toggleClass('on');
+            $('.accordian__desc').not($accoCont).slideUp(0);
+            if($accoCont.is(":visible")){
+                $accoCont.slideUp(0);
+            }
+            else {
+                $accoCont.slideDown(0,function(){
+                    $('html,body').animate({scrollTop: $accoParent.offset().top-$('.detail__topline').height()},0)
+                });
+            }
+            return false;
+        })
+    })
+</script>
+    <style>
+		.eventwrap .ev_box a {line-height:0;}
+		.eventwrap .ev_box img {max-width:750px;width:100%;vertical-align: top}
+		.eventwrap .ev_box {margin:0 auto; max-width:750px;}
+		.accordian {line-height:0;cursor: default;}
+		.accordian .accordian__title {width:100%;height: auto !important;border: none;}
+		.accordian .accordian__title .on {display:none;}
+		.accordian .accordian__desc {display:none}
+		.accordian.on .accordian__title .on {display:block;}
+		.accordian.on .accordian__title .def {display:none;}
+        .event_wrap button{display: block;width: 100%;}
+	</style>
+	<div class="event_wrap" style="width: 100%;">
+        <div class="bg_m"><img src="../event/images/2021/08_benefit/img_01.png" alt=""></div>
+        <div class="bg_m"><img src="../event/images/2021/08_benefit/img_02.png" alt=""></div>
+        <div class="bg_m"><img src="../event/images/2021/08_benefit/img_03.png" alt=""></div>
+        <div class="bg_m">
+            <a href="https://www.intermd.co.kr/event/list.do?eventRunYn=Y" target="_blank">
+                <img src="../event/images/2021/08_benefit/img_04.png" alt="">
+            </a>
+        </div>
+        <div class="bg_m">
+            <a href="https://www.intermd.co.kr/event/list.do?eventRunYn=Y" target="_blank">
+                <img src="../event/images/2021/08_benefit/img_05.png" alt="">
+            </a>
+        </div>
+        <div class="bg_m"><img src="../event/images/2021/08_benefit/img_06.png" alt=""></div>
+        <div class="bg_m"><img src="../event/images/2021/08_benefit/img_07.png" alt=""></div>
+        <div class="bg_m"><img src="../event/images/2021/08_benefit/img_08.png" alt=""></div>
+        <div class="bg_m">
+            <a href="https://www.intermd.co.kr/qna/list.do?listFilter=new" target="_blank">
+                <img src="../event/images/2021/08_benefit/img_09.png" alt="">
+            </a>
+        </div>
+        <div class="bg_m">
+            <a href="https://www.intermd.co.kr/posting/list.do?postCate=&postingOrder=N" target="_blank">
+                <img src="../event/images/2021/08_benefit/img_10.png" alt="">
+            </a>
+        </div>
+        <div class="bg_m">
+            <a href="#">
+                <img src="../event/images/2021/08_benefit/img_11.png" alt="">
+            </a>
+        </div>
+        <div class="bg_m"><img src="../event/images/2021/08_benefit/img_12.png" alt=""></div>
+        <div class="bg_m">
+            <a href="http://mall.intermd.co.kr/main.do" target="_blank">
+                <img src="../event/images/2021/08_benefit/img_13.png" alt="">
+            </a>
+        </div>
+        <div class="bg_m"><img src="../event/images/2021/08_benefit/img_14.png" alt=""></div>
+        <div class="bg_m"><img src="../event/images/2021/08_benefit/img_15.png" alt=""></div>
+        
+        <div class="ev_box">
+			<div class="accordian">
+				<button class="accordian__title">
+					<img src="https://www.intermd.co.kr/event/images/2020/09_benefit/faq_1.png" alt="" class="def">
+					<img src="https://www.intermd.co.kr/event/images/2020/09_benefit/faq_1_on.png" alt="" class="on">
+				</button>
+				<div class="accordian__desc" style="display: none;"><img src="../event/images/2021/08_benefit/img_16_on.png" alt=""></div>
+			</div>
+			<div class="accordian">
+				<button class="accordian__title">
+					<img src="https://www.intermd.co.kr/event/images/2020/09_benefit/faq_2.png" alt="" class="def">
+					<img src="https://www.intermd.co.kr/event/images/2020/09_benefit/faq_2_on.png" alt="" class="on">
+				</button>
+				<div class="accordian__desc" style="display: none;"><img src="../event/images/2021/08_benefit/img_17_on.png" alt=""></div>
+			</div>
+			<div class="accordian">
+				<button class="accordian__title">
+					<img src="https://www.intermd.co.kr/event/images/2020/09_benefit/faq_3.png" alt="" class="def">
+					<img src="https://www.intermd.co.kr/event/images/2020/09_benefit/faq_3_on.png" alt="" class="on">
+				</button>
+				<div class="accordian__desc" style="display: none;">
+					<img src="../event/images/2021/08_benefit/img_18_on_01.png" alt="">
+					<a href="http://mall.intermd.co.kr/main.do">
+                        <img src="../event/images/2021/08_benefit/img_18_on_02.png" alt="포인트몰 바로가기">
+                    </a>
+				</div>
+			</div>
+		</div>
+
+        <div class="bg_m"><img src="../event/images/2021/08_benefit/img_19.png" alt=""></div>
+	</div>
+<!-- E: 이벤트 콘텐츠 영역 -->
+</include>

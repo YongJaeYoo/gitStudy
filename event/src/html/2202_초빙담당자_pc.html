@@ -1,0 +1,179 @@
+<include src="./include/layout_pc.html">
+	<link rel="stylesheet" href="../event/css/xeicon.css">
+	<link rel="stylesheet" href="../event/css/font-awesome.css">
+	<!-- S: 이벤트 콘텐츠 -->
+	<!-- S: event -->
+
+    <script type="text/javascript">
+		$(function(){
+			$('.accordian__title').click(function(){
+				var $accoParent = $(this).parent('.accordian');
+				var $accoCont = $accoParent.find('.accordian__desc');
+	
+				$accoParent.toggleClass('on');
+				$('.accordian__desc').not($accoCont).slideUp(0);
+				if($accoCont.is(":visible")){
+					$accoCont.slideUp(0);
+				}
+				else {
+					$accoCont.slideDown(0,function(){
+						$('html,body').animate({scrollTop: $accoParent.offset().top-$('.gnb').height()},0)
+					});
+				}
+				return false;
+			})
+		})
+	</script>
+
+	<style>
+		.event_wrap.ready::after {padding-top: 74%;}
+		.evtExpBox {padding:0;}
+		.evtExpList.ready::after ,
+		.evtExpList.close::after {left: 7%;right: 7%;border-radius: 15px;}
+		.evtExpList.ready::after {background: rgba(0,0,0,.5);}
+		.evtExpList.close::after {background: rgba(0,0,0,.7);}
+		.event_wrap img{display: block;}
+
+        .accordian {line-height:0;cursor: default;}
+		.accordian .accordian__title {width:100%;height: auto !important;border: none;}
+		.accordian .accordian__title .on {display:none;}
+		.accordian .accordian__desc {display:none}
+		.accordian.on .accordian__title .on {display:block;}
+		.accordian.on .accordian__title .def {display:none;}
+        .event_wrap button{display: block;width: 100%;}
+	</style>
+	<div class class="event_wrap" style="width: 100%;">
+		<div class="bg_m"><img src="../event/images/2022/02_career_out/img_01.png" alt=""></div>
+        <div class="bg_m"><img src="../event/images/2022/02_career_out/img_02.png" alt=""></div>
+		<div class="bg_double">
+			<div class="bg_double__item">
+				<button>
+					<img src="../event/images/2022/02_career_out/img_03.png" alt="초빙 담당자 초대하기">
+				</button>
+			</div>
+			<div class="bg_double__item">
+				<button onclick="$('.evtExpPopupRenew').show()" title="초대/공고 등록 현황보기">
+					<img src="../event/images/2022/02_career_out/img_04.png" alt="초대/공고 등록 현황보기">
+				</button>
+			</div>
+		</div>
+
+		<div class="bg_m"><img src="../event/images/2022/02_career_out/img_05.png" alt=""></div>
+		<div class="bg_m"><img src="../event/images/2022/02_career_out/img_06.png" alt=""></div>
+		<div class="bg_m"><img src="../event/images/2022/02_career_out/img_07.png" alt=""></div>
+		<div class="bg_m"><img src="../event/images/2022/02_career_out/img_08.png" alt=""></div>
+		<div class="bg_m"><img src="../event/images/2022/02_career_out/img_09.png" alt=""></div>
+		<div class="bg_m"><img src="../event/images/2022/02_career_out/img_10.png" alt=""></div>
+
+        <div class="accordian">
+            <button class="accordian__title">
+                <img src="../event/images/2022/02_career_out/img_11_c.png" alt="" class="def">
+                <img src="../event/images/2022/02_career_out/img_11_o.png" alt="" class="on">
+            </button>
+            <div class="accordian__desc" style="display: none;"><img src="../event/images/2022/02_career_out/img_12.png" alt=""></div>
+        </div>
+        <div class="accordian">
+            <button class="accordian__title">
+                <img src="../event/images/2022/02_career_out/img_13_c.png" alt="" class="def">
+                <img src="../event/images/2022/02_career_out/img_13_o.png" alt="" class="on">
+            </button>
+            <div class="accordian__desc" style="display: none;"><img src="../event/images/2022/02_career_out/img_14.png" alt=""></div>
+        </div>
+        <div class="accordian">
+            <button class="accordian__title">
+                <img src="../event/images/2022/02_career_out/img_15_c.png" alt="" class="def">
+                <img src="../event/images/2022/02_career_out/img_15_o.png" alt="" class="on">
+            </button>
+            <div class="accordian__desc" style="display: none;"><img src="../event/images/2022/02_career_out/img_16.png" alt=""></div>
+        </div>
+
+        <div class="bg_m"><img src="../event/images/2022/02_career_out/img_17.png" alt=""></div>
+        <div class="bg_m"><img src="../event/images/2022/02_career_out/img_18.png" alt=""></div>
+	</div>
+	<!-- E: event -->
+
+	
+	<!-- Event Popup -->
+    <!-- 초대현황 -->
+	<div class="evtExpPopupRenew evtInvCommon color_57c351" style="display: block;">
+		<div class="evtExpPopupRenew__inr">
+			<div class="popupTab">
+				<button class="popupTab__btn on" data-content="tab1">초대 가입 현황</button>
+				<button class="popupTab__btn" data-content="tab2">공고 등록 현황</button>
+			</div>
+			<div class="popup_content">
+				<!-- 미션현황 -->
+				<div class="popupTab__content tab1">
+					<div class="top_tit">지금까지 총 0명의 <br>초빙 담당자가 가입하셨습니다</div>
+                    <div class="subtext">
+                        초대 수락 후 가입하신 초빙 담당자는 <b class="subtext__name">홍길동</b>으로 표시되며, <br>
+                        이벤트 종료 후 혜택 달성자는 별도 공지 드릴 예정입니다.
+                    </div>
+                    
+					<div class="eventInvite">
+                        <div class="invite__cont">
+                            <div class="invite__list">
+                                <ul>
+                                    <li class="selected"><span class="name">홍길동</span><span class="comment on">가입 완료!</span></li>
+                                    <li><span class="name">고길동</span><span class="comment">미완료</span></li>
+                                    <li><span class="name">김길동</span><span class="comment on">가입 완료!</span></li>
+                                    <li><span class="name">김길동</span><span class="comment on">가입 완료!</span></li>
+                                    <li><span class="name">김길동</span><span class="comment on">가입 완료!</span></li>
+                                    <li><span class="name">김길동</span><span class="comment on">가입 완료!</span></li>
+                                    <li><span class="name">김길동</span><span class="comment on">가입 완료!</span></li>
+                                    <li><span class="name">김길동</span><span class="comment on">가입 완료!</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>	
+				</div>
+				<!-- // 미션현황 -->
+				<!-- 나의 체험미션 -->
+				<div class="popupTab__content tab2" style="display:none;">
+					<div class="top_tit">초빙 담당자가 n건 공고를 등록하여 <br>커피 기프티콘 n매 지급 예정입니다</div>
+                    <div class="subtext">
+                        초대 수락 후 가입하신 초빙 담당자는 <b class="subtext__name">홍길동</b>으로 표시되며, <br>
+                        이벤트 종료 후 혜택 달성자는 별도 공지 드릴 예정입니다.
+                    </div>
+                    
+					<div class="eventInvite">
+                        <div class="invite__cont">
+                            <div class="invite__list">
+                                <ul>
+                                    <li class="selected"><span class="name">홍길동</span><span class="comment on">n건 등록</span></li>
+                                    <li class="selected"><span class="name">김길동</span><span class="comment on">n건 등록</span></li>
+                                    <li><span class="name">고길동</span><span class="comment">미등록</span></li>
+                                    <li><span class="name">고길동</span><span class="comment">미등록</span></li>
+                                    <li><span class="name">고길동</span><span class="comment">미등록</span></li>
+                                    <li><span class="name">고길동</span><span class="comment">미등록</span></li>
+                                    <li><span class="name">고길동</span><span class="comment">미등록</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+				<!-- // 나의 체험미션 -->
+			</div>
+			<button class="btn_wrap" onclick="$(this).closest('.evtExpPopupRenew').hide();return false;">확인</button>
+		</div>
+	</div>
+	<!-- //초대현황 -->
+
+    <script>
+		$(function(){
+			$('.popupTab__btn').click(function(){
+				var $this = $(this);
+				$('.popupTab__btn').removeClass('on');
+				$this.addClass('on');
+				var contentID = $this.attr('data-content');
+				$('.popupTab__content').hide();
+				$('.'+contentID).show();				
+				return false;
+			})
+		})
+	</script>
+
+
+	<!-- Event Popup -->
+	<!-- E: 이벤트 콘텐츠 -->
+</include>

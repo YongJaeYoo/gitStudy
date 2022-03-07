@@ -1,0 +1,227 @@
+<include src="./include/layout_mobile.html">
+
+<!-- S: 이벤트 콘텐츠 -->
+
+
+<style>
+	.d_c .pop_wrap2.alert_pop .on,
+	.invite__evt .top_tit .bold {color:#1b64bc}
+	.btn_wrap {background:#1b64bc}
+	@keyframes float {
+		0% { transform: scale(1); }
+		50% { transform: scale(1.1); }
+		100% { transform: scale(1); }
+	}
+	@keyframes float2 {
+		0% { transform: translatey(0px); }
+		30% { transform: translatey(-10px); }
+		100% { transform: translatey(0px); }
+	}
+	@keyframes float3 {
+		0% { transform: translatey(0px); }
+		40% { transform: translatey(-11px); }
+		100% { transform: translatey(0px); }
+	}
+	@keyframes float4 {
+		0% { transform: translatey(0px); }
+		50% { transform: translatey(-12px); }
+		100% { transform: translatey(0px); }
+	}
+	@keyframes float5 {
+		0% { transform: translatey(0px); }
+		60% { transform: translatey(-13px); }
+		100% { transform: translatey(0px); }
+	}
+	.float{ position: absolute; top: 0; right: 0; width:auto !important;height:100% !important;animation: float 3s ease-in-out infinite; pointer-events:none; }
+	.float2{ position: absolute; top: 0; left: 0; animation: float2 3s ease-in-out infinite; pointer-events:none; }
+	.float3{ position: absolute; top: 0; left: 0; animation: float3 3s ease-in-out infinite; pointer-events:none; }
+	.float4{ position: absolute; top: 0; left: 0; animation: float4 3s ease-in-out infinite; pointer-events:none; }
+	.float5{ position: absolute; top: 0; left: 0; animation: float5 3s ease-in-out infinite; pointer-events:none; }
+</style>
+
+<div class="event_wrap" style="width: 100%;">
+	<div style="width: 638px; margin: 0 auto; position: relative;" class="bg_m">
+		<img src="../event/images/2020/12_christmas/img_01_bg.png" />
+		<img class="float" src="../event/images/2020/12_christmas/img_01_mark.png" />
+		<img class="float2" src="../event/images/2020/12_christmas/img_01_gift_01.png" />
+		<img class="float3" src="../event/images/2020/12_christmas/img_01_gift_02.png" />
+		<img class="float4" src="../event/images/2020/12_christmas/img_01_gift_03.png" />
+		<img class="float5" src="../event/images/2020/12_christmas/img_01_gift_04.png" />
+	</div>
+	<div class="bg_m"><img src="../event/images/2020/12_christmas/img_02.png" alt="" /></div>
+	<a href="#" onclick="$('#detail_pop').show();"><img src="../event/images/2020/12_christmas/img_03_btn.png" alt="랜덤박스 확인하러 가기" /></a>
+	<div class="bg_m"><img src="../event/images/2020/12_christmas/img_04.png" alt="" /></div>		
+	<div class="bg_m"><img src="../event/images/2020/12_christmas/img_05.png" alt="" /></div>
+	<div class="bg_m"><img src="../event/images/2020/12_christmas/img_06.png" alt="" /></div>
+	<div class="bg_m"><img src="../event/images/2020/12_christmas/img_07.png" alt="" /></div>
+</div>
+
+<!-- Event Popup -->
+
+<!-- 나의 초대 현황 레이어팝업 step1 -->
+<style>
+	.d_c .pop_wrap2.alert_pop .on,
+	.invite__evt .top_tit .bold {color:#dd5700}
+	.btn_wrap {background:#dd5700}
+</style>
+<div id="detail_pop" class="pop small_pop invite__evt detail_popup_2012xmas" style="display:block;overflow:auto;z-index:101;">    
+	<div class="d_t">
+		<div class="d_c">
+			<div class="pop_wrap__2012 alert_pop">
+				<div class="popupTop">
+					<span onclick="$('#detail_pop').hide();"class="close"></span>
+				</div>
+				<div class="popupTab">
+					<button class="popupTab__btn on" data-content="tab1">나의 랜덤박스</button>
+					<button class="popupTab__btn" data-content="tab2">나의 당첨 현황</button>
+				</div>
+				<!-- 마이 리워드 -->
+				<div class="popup_content tab1">
+
+					<!-- 랜덤박스 오픈하기 -->
+					<div class="randomBox__open">
+						<div class="top_tit">
+							하루 1번 랜덤박스를<br>
+							확인하세요.
+						</div>
+						<div class="randomBox__wrapper">
+							<div class="randomBox__bg">
+								<img src="../event/images/2020/12_christmas/popup_img_01_bg.png" alt="">
+							</div>
+							<div><img src="../event/images/2020/12_christmas/popup_img_02_mark.png" alt=""></div>
+							<button class="float randomBox__btn" onclick="$('.randomBox__open').hide();$('.randomBox__result').addClass('on');">
+								<img src="../event/images/2020/12_christmas/popup_img_03_btn.png" alt="">
+							</button>
+						</div>
+					</div>
+					<!-- // 랜덤박스 오픈하기 -->
+
+					<!-- 랜덤박스 당첨 축하 -->
+					<div class="randomBox__result">
+						<div class="top_tit">
+							축 당첨!
+							<div class="randomBox__itemName">[인터엠디 포인트] 10,000P</div>
+						</div>
+						<div class="top_tit nothing blind">
+							아쉬워요!<br>다음 기회에!
+						</div>
+						<div class="randomBox__wrapper">
+							<div class="randomBox__bg">
+								<img src="../event/images/2020/12_christmas/popup_img_01_bg.png" alt="">
+							</div>
+							<div class="randomBox__item">
+								<div class="randomBox__item__img"></div>
+							</div>
+							<button class="randomBox__shareBtn">
+								<img src="../event/images/2020/12_christmas/popup_img_09_btn.png" alt="">
+							</button>
+							<div class="randomBox__item__result bounce">
+								<div class="randomBox__item__rsImg item4"></div>
+							</div>
+						</div>
+					</div>
+					<script>
+						var flag = 0;
+						function showShareBtn(){
+							if(flag==1){
+								$('.randomBox__item').animate({
+									'opacity': '0'
+								}, 300, 'linear',function(){
+									$('.randomBox__item__result').addClass('on');
+									$('.randomBox__result.on .top_tit').css('opacity','1');
+								});
+							}
+						}
+						$('.randomBox__btn').click(function(){
+							var time = 700;
+							var count = 3;
+
+							for(var i=0; i<count; i++){ 
+								if(i==count-1){
+									$('.randomBox__item__img').animate({
+										'background-position-x': '100%'
+									}, time, 'linear', function(){
+										flag = 1;
+										showShareBtn();
+									});
+								}else{
+									$('.randomBox__item__img').animate({
+										'background-position-x': '100%'
+									}, time, 'linear');
+									$('.randomBox__item__img').animate({
+										'background-position-x': '0%'
+									}, 0, 'linear');
+									time = time * 1.7;
+								} 
+							}  
+
+						});
+					</script>
+					
+					<!-- // 랜덤박스 당첨 축하 -->
+
+				</div>
+				<!-- 초대 현황 목록 -->
+				<div class="popup_content tab2">
+					<div class="top_tit">홍길동 선생님의<br>당첨 현황</div>
+						<div class="invite__cont">
+							<div class="invite__list">
+								<div class="eventMission__table">
+									<table>
+										<tr>
+											<th>참여일</th>
+											<th>리워드</th>
+										</tr>
+										<tr>
+											<td>11.31</td>
+											<td>리워드C</td>
+										</tr>
+										<tr>
+											<td>11.31</td>
+											<td>리워드C</td>
+										</tr>
+										<tr>
+											<td>11.31</td>
+											<td>리워드C</td>
+										</tr>
+										<tr>
+											<td>11.31</td>
+											<td>리워드C</td>
+										</tr>
+										<tr>
+											<td>11.31</td>
+											<td>리워드C</td>
+										</tr>
+									</table>        
+								</div>
+							</div>
+						</div>
+					<div class="aside">
+						다음주 수요일 오후 지급 (참여 완료일 기준) <br>
+						당첨자에게 개별 공지
+					</div>
+				</div>
+				<div class="btn_wrap"><a href="javascript:;" id="ck_bnt" class="btn_ok type_02" title="확인">확인</a></div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		$(function(){
+			$('.popupTab__btn').click(function(){
+				var $this = $(this);
+				$('.popupTab__btn').removeClass('on');
+				$this.addClass('on');
+				var contentID = $this.attr('data-content');
+				$('.popup_content').hide();
+				$('.'+contentID).show();				
+				return false;
+			})
+		})
+	</script>
+</div>
+<!-- Event Popup -->
+
+
+<!-- E: 이벤트 콘텐츠 -->
+</include>

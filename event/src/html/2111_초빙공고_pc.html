@@ -1,0 +1,102 @@
+<include src="./include/layout_pc.html">
+	<link rel="stylesheet" href="../event/css/xeicon.css">
+	<link rel="stylesheet" href="../event/css/font-awesome.css">
+	<!-- S: 이벤트 콘텐츠 -->
+	<!-- S: event -->
+
+
+	<style>
+		.event_wrap.ready::after {padding-top: 74%;}
+		.evtExpBox {padding:0;}
+		.evtExpList.ready::after ,
+		.evtExpList.close::after {left: 7%;right: 7%;border-radius: 15px;}
+		.evtExpList.ready::after {background: rgba(0,0,0,.5);}
+		.evtExpList.close::after {background: rgba(0,0,0,.7);}
+		.event_wrap img{display: block;}
+	</style>
+	<div class class="event_wrap" style="width: 100%;">
+		<div class="bg_m"><img src="../event/images/2021/11_posting/img_01.png" alt=""></div>
+		<div class="bg_m">
+			<button onclick="$('.evtExpPopupRenew').show()">
+				<img src="../event/images/2021/11_posting/img_02.png" alt="">
+			</button>
+		</div>
+		<div class="bg_m"><img src="../event/images/2021/11_posting/img_03.png" alt=""></div>
+		<div class="bg_m"><img src="../event/images/2021/11_posting/img_04.png" alt=""></div>
+		<div class="bg_m"><img src="../event/images/2021/11_posting/img_05.png" alt=""></div>
+		<div class="bg_m">
+			<a href="https://www.intermd.co.kr/career/list.do?careerCate=" target="_blank" title="초빙공고 바로가기">
+				<img src="../event/images/2021/11_posting/img_06.png" alt="초빙공고 바로가기">
+			</a>
+		</div>
+		<div class="bg_m"><img src="../event/images/2021/11_posting/img_07.png" alt=""></div>
+		<div class="bg_m"><img src="../event/images/2021/11_posting/img_08.png" alt=""></div>
+		<div class="bg_m">
+			<button>
+				<img src="../event/images/2021/11_posting/img_09.png" alt="">
+			</button>
+		</div>
+		<div class="bg_m"><img src="../event/images/2021/11_posting/img_10.png" alt=""></div>
+		<div class="bg_m"><img src="../event/images/2021/11_posting/img_11.png" alt=""></div>
+		<div class="bg_m"><img src="../event/images/2021/11_posting/img_12.png" alt=""></div>
+        
+
+
+        <!-- <div>
+            <button onclick="$('#detail_pop').show()"><img src="../event/images/2021/05_invite/img_04_btn.png" alt="5월 특별 리워드" /></button>
+        </div> -->
+	</div>
+	<!-- E: event -->
+
+	
+	<!-- Event Popup -->
+    <div class="evtExpPopupRenew evtInvCommon color_11c171" style="display: block;">
+		<div class="evtExpPopupRenew__inr">
+			<div class="evtExpPopupRenew__header">
+				<p class="txt">초빙 공고 이벤트</p>
+			</div>
+			<div class="popup_content">
+				<!-- 미션현황 -->
+				<div class="popupTab__content tab1">
+					<div class="top_tit">김닥터 선생님의 <br><b>n월 참여 현황</b></div>
+
+					<div class="eventStamp">
+						<div class="eventStamp__item">
+							<div class="eventStamp__itemBg"></div>
+							<div class="eventStamp__itemTxt">
+								<p>초빙 공고<br>작성하기<br>0회</p>
+							</div>
+						</div>
+
+						<div class="eventStamp__item on">
+							<div class="eventStamp__itemBg"></div>
+							<div class="eventStamp__itemTxt">
+								<p>초빙 공고<br>공유하기<br>1회</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+				<!-- // 미션현황 -->
+			</div>
+			<button class="btn_wrap" onclick="$(this).closest('.evtExpPopupRenew').hide();return false;">확인</button>
+		</div>
+	</div>
+
+    <script>
+		$(function(){
+			$('.popupTab__btn').click(function(){
+				var $this = $(this);
+				$('.popupTab__btn').removeClass('on');
+				$this.addClass('on');
+				var contentID = $this.attr('data-content');
+				$('.popupTab__content').hide();
+				$('.'+contentID).show();				
+				return false;
+			})
+		})
+	</script>
+
+
+	<!-- Event Popup -->
+	<!-- E: 이벤트 콘텐츠 -->
+</include>

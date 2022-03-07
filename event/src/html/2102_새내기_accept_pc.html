@@ -1,0 +1,53 @@
+
+
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:title"         content="[인터엠디] 친구초대 이벤트" id="metaTitle" />
+<meta property="og:description"   content="의사만을 위한 Professional Knowledge Place" />
+<meta property="og:image"         content="https://www.intermd.co.kr/images/2001_invite/invite_logo.png" />
+<title>[인터엠디] 친구초대 이벤트</title>
+<link rel="stylesheet" href="../event/css/layout.css?v=20200102" media="all" />
+
+<script src="https://www.intermd.co.kr/js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+
+
+	<div class="event_wrap2">
+		<div style="background: #0777cc"><img src="../event/images/2021/02_fresher/landing_01.png" alt="2021 새내기 의사 선생님의 첫 걸음을 응원합니다" /></div>
+		<!-- S: 초대 수락하기 -->
+		<div><img src="../event/images/app/Mobile_invite_04.png" /></div>
+		<form id="insertForm" name="insertForm" method="post">
+			<input id="invitePseq" name="invitePseq" type="hidden" value="19013">
+			<input id="inviteName" name="inviteName" type="hidden" value="인터엠디">
+			<div class="md_login">
+				<p class="title"></p>
+				<div class="input">
+					<ul>
+						<li><span>이 름&nbsp;&nbsp;&nbsp;</span> <input type="text" name="name" id="name"  class="focus" onKeyPress="nameKey()"onkeydown='return nameCk(this)' ></li>
+						<li><span>휴대폰</span> <input type="text" name="phone" id="phone" placeholder="-없이 입력" class="focus" onKeyPress="numberKey()" onkeydown='return onlyNumber(this)' maxlength="11"></li>
+					</ul>
+				</div>
+				<p class="alert_msg">*인터엠디 신규가입 정보와 동일해야합니다.</p>
+				
+		        <p class="check_login">
+		            <input type="checkbox" name="checkboxG5" id="checkboxG5" class="css-checkbox" />
+		            <label for="checkboxG5" class="css-label">인터엠디 이벤트 등 홍보/알림 수신에 동의합니다.</label>
+		        </p>
+			</div>
+		</form>
+		<div>
+			<a href="javascript:;" id="saveBtn"><img src="../event/images/2021/02_fresher/Mobile_invite_06.png"></a>
+		</div>
+		<div><img src="../event/images/interMD_invite_07.png" /></div>
+		<!-- E: 초대 수락하기 -->
+
+		<div class="invite_top2"><img src="../event/images/app/Mobile_invite_02.png?v=20190809"></div>
+		<div style="background: #f8fbfd"><img src="../event/images/app/Mobile_invite_03.png"></div>
+	</div>
+
+	
+</body>
+</html>
